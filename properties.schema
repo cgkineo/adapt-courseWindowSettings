@@ -1,0 +1,73 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties":{
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type":"object",
+          "properties": {
+            "_courseWindowSettings": {
+              "type":"object",
+              "required":false,
+              "legend": "Course window settings",
+              "properties":{
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Enable?",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+		              "help": "Set to true to enable this extension, false to disable it."
+                },
+                "_restrictTo": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Applicable to",
+                  "inputType": "Text",
+                  "validators": [],
+		              "help": "To restrict the settings to a specific launch page, enter the page name here e.g. if you only want the settings to apply to the SCORM version of the course, put 'index_lms.html' here. To apply to multiple pages, separate page names with commas. Leave blank to apply settings to all pages."
+                },
+                "_resizeTo": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Size",
+                  "inputType": "Text",
+                  "validators": [],
+		              "help": "Enter the width and height you want the course window to be resized to, in the format 'width, height'. To have the course window fill the screen, use 'availWidth, availHeight'"
+                },
+                "_moveTo": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Position",
+                  "inputType": "Text",
+                  "validators": [],
+		              "help": "Enter the position you want the course window to be moved to, in the format 'x, y'. Typically you would set this to '0,0'. If the user has multiple screens, this is relative to screen the window is on."
+                }
+              }
+            }
+          }
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

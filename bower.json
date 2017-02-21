@@ -1,16 +1,17 @@
 {
-	"name": "adapt-courseWindowSettings",
-	"version": "1.0.0",
-	"framework": "^2.0.0",
-	"displayName": "Course Window Settings",
-	"extension": "courseWindowSettings",
-	"targetAttribute": "_courseWindowSettings",
-	"description": "An extension to set the course window size and/or position when it loads",
-	"main": "/js/adapt-courseWindowSettings.js",
-	"keywords": [
-		"adapt-plugin",
-		"adapt-extension"
-	],
-	"license": "GPL-3.0",
-	"homepage": "https://github.com/cgkineo/adapt-courseWindowSettings"
+    "name": "adapt-courseWindowSettings",
+    "repository": "git://github.com/cgkineo/adapt-courseWindowSettings",
+    "framework": "^2.0.0",
+    "version": "1.0.0",
+    "displayName": "Course Window Settings",
+    "extension": "courseWindowSettings",
+    "targetAttribute": "_courseWindowSettings",
+    "description": "An extension to set the course window size and/or position when it loads",
+    "main": "/js/adapt-courseWindowSettings.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/cgkineo/adapt-courseWindowSettings"
 }

@@ -19,7 +19,7 @@ An extension to set the course window size and/or position when it launches. Use
 
 >**_moveTo** (string): The x and y coordinates you'd like the browser window to be moved to, in the format `"x,y"` i.e. `"0,0"`. Note that if the user is running multiple monitors, these coordinates are relative to the monitor the course window is displayed in.
 
-##Limitations
+## Limitations
 Chrome and Firefox will not allow a window to be moved or resized unless it was opened via `window.open`. Internet Explorer v11 will allow this, but *only* if there are no other tabs open in the current window. The Edge browser seems not to allow `window.moveTo` and does not seem to like `window.resizeTo(screen.availWidth, screen.availHeight)` though it will do `window.resizeTo(screen.availWidth-40, screen.availHeight-40);` - this needs further investigation.
 
 Obviously this extension will have no impact whatsoever on browsers like Safari for iOS or Chrome for Android that always open windows in a fixed size & position. 

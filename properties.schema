@@ -20,9 +20,8 @@
                   "type": "boolean",
                   "required": false,
                   "title": "Enable?",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
-                  "validators": [],
-		              "help": "Set to true to enable this extension, false to disable it."
+                  "inputType": "Checkbox",
+                  "validators": []
                 },
                 "_restrictTo": {
                   "type": "string",
@@ -30,7 +29,7 @@
                   "title": "Applicable to",
                   "inputType": "Text",
                   "validators": [],
-		              "help": "To restrict the settings to a specific launch page, enter the page name here e.g. if you only want the settings to apply to the SCORM version of the course, put 'index_lms.html' here. To apply to multiple pages, separate page names with commas. Leave blank to apply settings to all pages."
+		  "help": "To restrict the settings to a specific launch page, enter the page name here e.g. if you only want the settings to apply to the SCORM version of the course, put 'index_lms.html' here. To apply to multiple pages, separate page names with commas. Leave blank to apply settings to all pages."
                 },
                 "_resizeTo": {
                   "type": "string",
@@ -38,7 +37,7 @@
                   "title": "Size",
                   "inputType": "Text",
                   "validators": [],
-		              "help": "Enter the width and height you want the course window to be resized to, in the format 'width, height'. To have the course window fill the screen, use 'availWidth, availHeight'"
+		  "help": "Enter the width and height you want the course window to be resized to, in the format 'width, height'. To have the course window fill the screen, use 'availWidth, availHeight'"
                 },
                 "_moveTo": {
                   "type": "string",
@@ -46,7 +45,7 @@
                   "title": "Position",
                   "inputType": "Text",
                   "validators": [],
-		              "help": "Enter the position you want the course window to be moved to, in the format 'x, y'. Typically you would set this to '0,0'. If the user has multiple screens, this is relative to screen the window is on."
+		  "help": "Enter the position you want the course window to be moved to, in the format 'x, y'. Typically you would set this to '0,0'. If the user has multiple screens, this is relative to screen the window is on."
                 }
               }
             }

@@ -1,5 +1,5 @@
-define([ 
-	"core/js/adapt" 
+define([
+	"core/js/adapt"
 ], function(Adapt) {
 
 	function checkPageNameMatches(pageNames, pathName) {
@@ -45,6 +45,10 @@ define([
 				try {
 					var sizeParams = getSizeParameters(config._resizeTo);
 					top.window.resizeTo(sizeParams.width, sizeParams.height);
+					// make sure Adapt.device updates with the new window size
+					Adapt.once('app:dataReady', function() {
+						$(window).trigger('resize');
+					});
 				} catch(e) {
 					console.error(e);
 				}

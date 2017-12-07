@@ -1,8 +1,8 @@
 {
     "name": "adapt-courseWindowSettings",
     "repository": "git://github.com/cgkineo/adapt-courseWindowSettings",
-    "framework": "^2.0.0",
-    "version": "1.0.0",
+    "framework": ">=2",
+    "version": "1.0.1",
     "displayName": "Course Window Settings",
     "extension": "courseWindowSettings",
     "targetAttribute": "_courseWindowSettings",

@@ -1,21 +1,21 @@
 {
-  "type":"object",
+  "type": "object",
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "http://jsonschema.net",
-  "required":false,
-  "properties":{
+  "required": false,
+  "properties": {
     "pluginLocations": {
       "type": "object",
       "required": true,
       "properties": {
         "config": {
-          "type":"object",
+          "type": "object",
           "properties": {
             "_courseWindowSettings": {
-              "type":"object",
-              "required":false,
+              "type": "object",
+              "required": false,
               "legend": "Course window settings",
-              "properties":{
+              "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": false,

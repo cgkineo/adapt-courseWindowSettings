@@ -1,0 +1,44 @@
+{
+  "$anchor": "courseWindowSettings-config",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "config"
+    },
+    "with": {
+      "properties": {
+        "_courseWindowSettings": {
+          "type": "object",
+          "title": "Course window settings",
+          "default": {},
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable?",
+              "default": false
+            },
+            "_resizeTo": {
+              "type": "string",
+              "title": "Window Size",
+              "description": "Enter the width and height you want the course window to be resized to, in the format 'width, height'. To have the course window fill the screen, use 'availWidth, availHeight'",
+              "default": ""
+            },
+            "_moveTo": {
+              "type": "string",
+              "title": "Window Position",
+              "description": "Enter the position you want the course window to be moved to, in the format 'x, y'. Typically you would set this to '0,0'. If the user has multiple screens, this is relative to screen the window is on.",
+              "default": ""
+            },
+            "_restrictTo": {
+              "type": "string",
+              "title": "Applicable to",
+              "description": "To restrict the settings to a specific launch page, enter the page name here e.g. if you only want the settings to apply to the SCORM version of the course, put 'index_lms.html' here. To apply to multiple pages, separate page names with commas. Leave blank to apply settings to all pages.",
+              "default": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

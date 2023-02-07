@@ -5,7 +5,7 @@
     "url": "git://github.com/cgkineo/adapt-courseWindowSettings"
   },
   "displayName": "Course Window Settings",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "framework": ">=2",
   "description": "An extension to set the course window size and/or position when it loads",
   "homepage": "https://github.com/cgkineo/adapt-courseWindowSettings",

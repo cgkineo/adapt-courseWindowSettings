@@ -25,3 +25,10 @@ Chrome and Firefox will not allow a window to be moved or resized unless it was 
 Obviously this extension will have no impact whatsoever on browsers like Safari for iOS or Chrome for Android that always open windows in a fixed size & position. 
 
 Finally, it should be noted that Firefox allows users to disallow any form of window resize or move by setting `dom.disable_window_move_resize` to `true` in the Firefox config.
+
+----------------------------
+
+**Author / maintainer:**  Mindtools Kineo<br>
+**Accessibility support:**  WAI AA<br>
+**RTL support:**  Yes<br>
+**Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge, Safari for macOS/iOS/iPadOS, Opera<br>
